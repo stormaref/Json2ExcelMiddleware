@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<Authors>Aref Azizian</Authors>
+		<Copyright>Aref Azizian</Copyright>
+		<Owners>Aref Azizian</Owners>
+		<Title>Json2ExcelMiddleware</Title>
+		<Description>Simple middleware for converting json result to excel file</Description>
+		<PackageId>Json2ExcelMiddleware</PackageId>
+		<PackageVersion>1.0.0</PackageVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="ClosedXML" Version="0.95.4" />
+		<PackageReference Include="System.Text.Json" Version="5.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="System.Text.Json" />
+	  <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
+	  <None Remove="NuGet.Build.Packaging" />
+	</ItemGroup>
+</Project>
