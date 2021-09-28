@@ -1,9 +1,9 @@
 ﻿using ClosedXML.Excel;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using System.Data;
 using System.IO;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Json2ExcelMiddleware
@@ -71,7 +71,7 @@ namespace Json2ExcelMiddleware
         private DataTable GetDataTable(string responseBody)
         {
             var jsonString = responseBody.StartsWith("{") ? $"[{responseBody}]" : responseBody;
-            return (DataTable)JsonSerializer.Deserialize(jsonString, typeof(DataTable));
+            return (DataTable)JsonConvert.DeserializeObject(jsonString, typeof(DataTable));
         }
     }
 

@@ -8,20 +8,21 @@
 		<Title>Json2ExcelMiddleware</Title>
 		<Description>Simple middleware for converting json result to excel file</Description>
 		<PackageId>Json2ExcelMiddleware</PackageId>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.1.0</PackageVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="ClosedXML" Version="0.95.4" />
-		<PackageReference Include="System.Text.Json" Version="5.0.2" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
 		<PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		  <PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="System.Text.Json" />
 	  <None Remove="Microsoft.AspNetCore.Http.Abstractions" />
 	  <None Remove="NuGet.Build.Packaging" />
+	  <None Remove="Newtonsoft.Json" />
 	</ItemGroup>
 </Project>
