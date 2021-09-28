@@ -2,6 +2,14 @@
 
 This middleware convert your .net controller json result to excel file without adding anything to any controller
 
+how to add package:
+
+using pm>
+
+```
+Install-Package Json2ExcelMiddleware -Version 1.1.0
+```
+
 how to use: 
 
 1) first add this line of code to your startup file configure section:
