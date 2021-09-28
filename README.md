@@ -14,7 +14,7 @@ how to use:
 
 1) first add this line of code to your startup file configure section:
 
-```
+```c#
 app.UseJson2Excel();
 ```
 * after app.UseRouting()
