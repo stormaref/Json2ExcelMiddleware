@@ -7,7 +7,7 @@ how to add package:
 using pm>
 
 ```
-Install-Package Json2ExcelMiddleware -Version 1.1.0
+Install-Package Json2ExcelMiddleware -Version 1.2.0
 ```
 
 how to use: 
