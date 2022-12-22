@@ -10,6 +10,10 @@
 		<PackageId>Json2ExcelMiddleware</PackageId>
 		<PackageVersion>1.2.0</PackageVersion>
 		<LangVersion>latest</LangVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageProjectUrl>https://github.com/stormaref/Json2ExcelMiddleware</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/stormaref/Json2ExcelMiddleware/blob/main/LICENSE</PackageLicenseUrl>
+		<RepositoryUrl>https://github.com/stormaref/Json2ExcelMiddleware</RepositoryUrl>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="ClosedXML" Version="0.95.4" />
