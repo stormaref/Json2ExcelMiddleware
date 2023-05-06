@@ -8,24 +8,30 @@
         <Title>Json2ExcelMiddleware</Title>
         <Description>Simple middleware for converting json result to excel file</Description>
         <PackageId>Json2ExcelMiddleware</PackageId>
-        <PackageVersion>1.2.0</PackageVersion>
+        <PackageVersion>1.2.1</PackageVersion>
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/stormaref/Json2ExcelMiddleware</PackageProjectUrl>
         <license>https://github.com/stormaref/Json2ExcelMiddleware/blob/main/LICENSE</license>
         <RepositoryUrl>https://github.com/stormaref/Json2ExcelMiddleware</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
     <ItemGroup>
-        <PackageReference Include="ClosedXML" Version="0.95.4"/>
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ClosedXML" Version="0.101.0"/>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
         <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.2"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
     </ItemGroup>
+
     <ItemGroup>
-        <None Remove="System.Text.Json"/>
         <None Remove="Microsoft.AspNetCore.Http.Abstractions"/>
         <None Remove="NuGet.Build.Packaging"/>
         <None Remove="Newtonsoft.Json"/>
