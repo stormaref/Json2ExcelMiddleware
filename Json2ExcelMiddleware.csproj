@@ -6,7 +6,6 @@
         <Copyright>Aref Azizian</Copyright>
         <Owners>Aref Azizian</Owners>
         <Title>Json2ExcelMiddleware</Title>
-        <Description>Simple middleware for converting json result to excel file</Description>
         <PackageId>Json2ExcelMiddleware</PackageId>
         <PackageVersion>1.2.1</PackageVersion>
         <LangVersion>latest</LangVersion>
@@ -14,11 +13,12 @@
         <PackageProjectUrl>https://github.com/stormaref/Json2ExcelMiddleware</PackageProjectUrl>
         <license>https://github.com/stormaref/Json2ExcelMiddleware/blob/main/LICENSE</license>
         <RepositoryUrl>https://github.com/stormaref/Json2ExcelMiddleware</RepositoryUrl>
+        <Description>Simple middleware for converting json result to excel file</Description>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <None Include="README.md" Pack="true" PackagePath="\README.md"/>
     </ItemGroup>
 
     <ItemGroup>
