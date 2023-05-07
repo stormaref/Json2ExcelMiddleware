@@ -7,7 +7,7 @@
         <Owners>Aref Azizian</Owners>
         <Title>Json2ExcelMiddleware</Title>
         <PackageId>Json2ExcelMiddleware</PackageId>
-        <PackageVersion>1.2.1</PackageVersion>
+        <PackageVersion>1.2.3</PackageVersion>
         <LangVersion>latest</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageProjectUrl>https://github.com/stormaref/Json2ExcelMiddleware</PackageProjectUrl>
@@ -18,22 +18,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="\README.md"/>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="ClosedXML" Version="0.101.0"/>
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
-        <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-            <PrivateAssets>all</PrivateAssets>
-        </PackageReference>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Remove="Microsoft.AspNetCore.Http.Abstractions"/>
-        <None Remove="NuGet.Build.Packaging"/>
-        <None Remove="Newtonsoft.Json"/>
     </ItemGroup>
 </Project>
