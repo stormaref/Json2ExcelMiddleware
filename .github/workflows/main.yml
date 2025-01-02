@@ -14,7 +14,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '7.0.x'
+        dotnet-version: '9.0.x'
     - name: Install dependencies
       run: dotnet restore
     - name: Build
@@ -22,7 +22,7 @@ jobs:
     - name: Publish to NuGet
       uses: brandedoutcast/publish-nuget@v2
       with:
-        PROJECT_FILE_PATH: Json2ExcelMiddleware/Json2ExcelMiddleware.csproj
+        PROJECT_FILE_PATH: src/Json2ExcelMiddleware/Json2ExcelMiddleware.csproj
         VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
         TAG_FORMAT: '*'
         NUGET_KEY: ${{secrets.NUGET_API_KEY}}

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2ExcelMiddleware", "Json2ExcelMiddleware/Json2ExcelMiddleware.csproj", "{998A0BF3-F804-4800-B1CA-3F780DE7BA47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2ExcelMiddleware", "src/Json2ExcelMiddleware/Json2ExcelMiddleware.csproj", "{998A0BF3-F804-4800-B1CA-3F780DE7BA47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9893526-8455-4DE3-B735-3E16EBDBD2DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{CD495AC6-3D6C-4571-AAA5-864E2433A0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApi", "sample\SampleApi\SampleApi.csproj", "{9FE81C40-0E45-4A90-B158-47AB7996F380}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,11 +21,19 @@ Global
 		{998A0BF3-F804-4800-B1CA-3F780DE7BA47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{998A0BF3-F804-4800-B1CA-3F780DE7BA47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{998A0BF3-F804-4800-B1CA-3F780DE7BA47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE81C40-0E45-4A90-B158-47AB7996F380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE81C40-0E45-4A90-B158-47AB7996F380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE81C40-0E45-4A90-B158-47AB7996F380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE81C40-0E45-4A90-B158-47AB7996F380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {137E9823-C4DB-49B5-A7A0-3C919779CD91}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{998A0BF3-F804-4800-B1CA-3F780DE7BA47} = {E9893526-8455-4DE3-B735-3E16EBDBD2DC}
+		{9FE81C40-0E45-4A90-B158-47AB7996F380} = {CD495AC6-3D6C-4571-AAA5-864E2433A0D1}
 	EndGlobalSection
 EndGlobal

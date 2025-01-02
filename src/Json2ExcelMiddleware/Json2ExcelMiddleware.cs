@@ -62,7 +62,7 @@ internal class Json2ExcelMiddleware
     private static XLWorkbook CreateWorkbook(string json)
     {
         var dataTable = GetDataTable(json);
-        using var workbook = new XLWorkbook();
+        var workbook = new XLWorkbook();
         workbook.Worksheets.Add(dataTable, SheetName);
         return workbook;
     }
