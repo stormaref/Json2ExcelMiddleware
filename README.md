@@ -1,30 +1,39 @@
-# Json2ExcelMiddleware
+# Json2ExcelMiddleware  
 
-This middleware convert your .net controller json result to excel file without adding anything to any controller
+**Json2ExcelMiddleware** allows you to effortlessly convert your .NET controller's JSON responses into Excel files with minimal setup.  
 
-how to add package:
+## Installation  
 
-using pm>
-
-```
+Install the package via NuGet:  
+```bash
 Install-Package Json2ExcelMiddleware -Version 1.2.4
 ```
 
-how to use: 
+## How to Use  
 
-1) first add this line of code to your startup file configure section:
+1. **Configure Middleware**  
+   Add the following line to the `Configure` method in your `Startup.cs` after `app.UseRouting()`:  
+   ```csharp
+   app.UseJson2Excel();
+   ```
+2. **Set Header**
+   Include this header in your HTTP request:
+   ```
+   x-excel:1
+   ```
+That’s it! The middleware works with all HTTP methods (GET, POST, PUT, etc.).
 
-```c#
-app.UseJson2Excel();
+## Example
+### Before
+A typical JSON response:
+```json
+[
+  { "Name": "Alice", "Age": 25 },
+  { "Name": "Bob", "Age": 30 }
+]
 ```
-* after app.UseRouting()
+### After
+Downloadable Excel file with the same data!
 
-2) add this header to your http request:
-
-```
-x-excel:1
-```
-
-that's it!
-
-it works for every kind of http request (get,post,put,etc.)
+## License
+This project is licensed under [Apache License](https://github.com/stormaref/Json2ExcelMiddleware/blob/main/LICENSE)
